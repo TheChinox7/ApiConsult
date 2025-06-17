@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view>
+    <columns>
+        <group name="data_extension" numcolumns="12">
+            <!-- //fiscal identification -->
+            <column name="fiscal-id" titleurl="EditSettings?activetab=EditIdentificadorFiscal"
+                numcolumns="2"
+                order="104" overwrite="true">
+                <widget type="select" fieldname="tipoidfiscal" required="true">
+                    <values source="idsfiscales" fieldcode="tipoidfiscal" fieldtitle="tipoidfiscal" />
+                </widget>
+            </column>
+            <!-- //fiscal number -->
+            <column name="fiscal-number" numcolumns="2" order="108" overwrite="true">
+                <widget type="text" fieldname="cifnif" maxlength="30" />
+            </column>
+            <!-- name -->
+            <column name="name" description="desc-customer-name" order="110">
+                <widget type="text" fieldname="nombre" maxlength="100" required="true" />
+            </column>
+            <!-- fiscal mode -->
+            <column name="fiscal-mode" title="type" numcolumns="2" order="120">
+                <widget type="select" fieldname="personafisica" translate="true" required="true">
+                    <values title="is-person">1</values>
+                    <values title="company">0</values>
+                </widget>
+            </column>
+        </group>
+    </columns>
+</view>

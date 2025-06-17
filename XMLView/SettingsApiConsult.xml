@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view>
+    <columns>
+        <group name="ApiConsult-data" numcolumns="12" icon="fas fa-envelope" valign="bottom">
+            <column name="name" display="none" order="0">
+                <widget type="text" fieldname="name" readonly="true" required="true" />
+            </column>
+            <column name="Token" description="El token es requerido para autenticar las consultas a la API. 
+                Para obtenerlo, debe registrarse en la web de https://apiconsult.zampisoft.com, 
+                crear una cuenta y generar un token o API key, el cual debe colocarse aquí." numcolumns="12" order="210">
+                <widget type="text" fieldname="token" icon="fa fa-key" />
+            </column>
+
+        </group>
+
+    </columns>
+</view>
